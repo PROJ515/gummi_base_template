@@ -12,7 +12,7 @@ signJoint: 1
 name: "shoulder_roll"
 nameEncoder: "shoulder_roll_encoder"
 minAngle: -0.95
-maxAngle: 2.3
+maxAngle: 1.5
 maxAbsForwardError: 0.3
 gains:
     P: 0.02
