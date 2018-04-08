@@ -11,7 +11,7 @@
                     port_name: "/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_AL03EMUD-if00-port0"
                     baud_rate: 1000000
                     min_motor_id: 1
-                    max_motor_id: 60
+                    max_motor_id: 50
                     update_rate: 1
                 gummi_ae:
                     <!-- Equivalent to /dev/ttyUSB0 can be find at /dev/serial/by-id -->
@@ -19,7 +19,7 @@
                     port_name: "/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_A906DH7H-if00-port0"
                     baud_rate: 1000000
                     min_motor_id: 1
-                    max_motor_id: 60
+                    max_motor_id: 54
                     update_rate: 100
                 gummi_se:
                     <!-- Equivalent to /dev/ttyUSB0 can be find at /dev/serial/by-id -->
@@ -27,16 +27,16 @@
                     port_name: "/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_AL03ENRJ-if00-port0"
                     baud_rate: 1000000
                     min_motor_id: 1
-                    max_motor_id: 60
+                    max_motor_id: 50
                     update_rate: 100
-                gummi_ed:
+                gummi_de:
                     <!-- Equivalent to /dev/ttyUSB0 can be find at /dev/serial/by-id -->
                     <!--port_name: "/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_AL02L1KJ-if00-port0"-->
                     port_name: "/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT1YF7OA-if00-port0"
                     baud_rate: 1000000
                     min_motor_id: 1
                     max_motor_id: 60
-                    update_rate: 100
+                    update_rate: 1
         </rosparam>
     </node>
     <arg name="base" value="$(env ROS_GUMMI_BASE)" />
@@ -44,7 +44,6 @@
       <arg name="msg" value="&quot;*** For help and troubleshooting visit: https://github.com/mstoelen/GummiArm/wiki and https://github.com/GummiArmCE/gummi_base_template/wiki/Troubleshooting ***&quot;"/>
     </include>
 </launch>
-
 
 
 
